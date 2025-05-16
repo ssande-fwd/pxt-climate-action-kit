@@ -4,14 +4,14 @@
     "description": "Modules and lessons for the Climate Action Kit.",
     "license": "MIT",
     "dependencies": {
-        "fwd-breakout": "github:ssande-fwd/pxt-fwd-modules/fwd-breakout#v2.0.1",
-        "fwd-dial": "github:ssande-fwd/pxt-fwd-modules/fwd-dial#v2.0.1",
-        "fwd-led-ring": "github:ssande-fwd/pxt-fwd-modules/fwd-led-ring#v2.0.1",
-        "fwd-edu-line": "github:ssande-fwd/pxt-fwd-modules/fwd-line#v2.0.1",
-        "fwd-moisture": "github:ssande-fwd/pxt-fwd-modules/fwd-moisture#v2.0.1",
-        "fwd-solar": "github:ssande-fwd/pxt-fwd-modules/fwd-solar#v2.0.1",
-        "fwd-sonar": "github:ssande-fwd/pxt-fwd-modules/fwd-sonar#v2.0.1",
-        "fwd-touch": "github:ssande-fwd/pxt-fwd-modules/fwd-touch#v2.0.1"
+        "fwd-breakout": "github:ssande-fwd/pxt-fwd-modules/fwd-breakout#v2.0.2",
+        "fwd-dial": "github:ssande-fwd/pxt-fwd-modules/fwd-dial#v2.0.2",
+        "fwd-led-ring": "github:ssande-fwd/pxt-fwd-modules/fwd-led-ring#v2.0.2",
+        "fwd-edu-line": "github:ssande-fwd/pxt-fwd-modules/fwd-line#v2.0.2",
+        "fwd-moisture": "github:ssande-fwd/pxt-fwd-modules/fwd-moisture#v2.0.2",
+        "fwd-solar": "github:ssande-fwd/pxt-fwd-modules/fwd-solar#v2.0.2",
+        "fwd-sonar": "github:ssande-fwd/pxt-fwd-modules/fwd-sonar#v2.0.2",
+        "fwd-touch": "github:ssande-fwd/pxt-fwd-modules/fwd-touch#v2.0.2"
     },
     "files": [],
     "testFiles": [],
