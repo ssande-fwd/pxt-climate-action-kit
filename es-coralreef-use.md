@@ -1,6 +1,6 @@
 # Coral Reef Model - Use Tutorial
 ```package
-=github:ssande-fwd/pxt-climate-action
+climate-action=github:ssande-fwd/pxt-climate-action
 datalogger=datalogger
 ```
 
