@@ -13,7 +13,9 @@
         "fwd-sonar": "github:ssande-fwd/pxt-fwd-modules/fwd-sonar#v2.0.2",
         "fwd-touch": "github:ssande-fwd/pxt-fwd-modules/fwd-touch#v2.0.2"
     },
-    "files": [],
+    "files": [
+        "blank-project.md"
+    ],
     "testFiles": [],
     "public": true,
     "supportedTargets": [
