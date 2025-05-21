@@ -5,10 +5,10 @@ datalogger=datalogger
 ```
 
 ```template
-sensors.dial1.fwdOnDialTurned(sensors.DialDirection.CCW, function (difference) {
+buttons.dial1.fwdOnDialTurned(buttons.DialDirection.CCW, function (difference) {
     temperature += -1
 })
-sensors.dial1.fwdOnDialTurned(sensors.DialDirection.CW, function (difference) {
+buttons.dial1.fwdOnDialTurned(buttons.DialDirection.CW, function (difference) {
     temperature += 1
 })
 let temperature = 28
@@ -17,9 +17,9 @@ basic.forever(function () {
 })
 basic.forever(function () {
     if (temperature > 30) {
-        lights.ledRing.fwdSetAllPixelsColour(0xffffff)
+        lights.ledRing1.fwdSetAllPixelsColour(0xffffff)
     } else {
-        lights.ledRing.fwdSetAllPixelsColour(0xff0080)
+        lights.ledRing1.fwdSetAllPixelsColour(0xff0080)
     }
     basic.pause(100)
 })
@@ -31,43 +31,43 @@ Let's build our coral reef model! We are going to do this in three parts:
 2. **Add code** to your model to bring it to life
 3. **Use** your model to simulate coral bleaching
 
-<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-coralreef-render.webp" alt="Full coral reef model render" style="display: block; width: 70%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action/main/tutorial-assets/es-coralreef-render.webp" alt="Full coral reef model render" style="display: block; width: 70%; margin:auto;">
 
 ## Build Step 1 @showdialog
-![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-coralreef-sbs01.webp)
+![sbs1](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action/main/tutorial-assets/es-coralreef-sbs01.webp)
 
 ## Build Step 2 @showdialog
-![sbs2](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-coralreef-sbs02.webp)
+![sbs2](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action/main/tutorial-assets/es-coralreef-sbs02.webp)
 
 ## Build Step 3 @showdialog
-![sbs3](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-coralreef-sbs03.webp)
+![sbs3](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action/main/tutorial-assets/es-coralreef-sbs03.webp)
 
 ## Build Step 4 @showdialog
-![sbs4](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-coralreef-sbs04.webp)
+![sbs4](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action/main/tutorial-assets/es-coralreef-sbs04.webp)
 
 ## Build Step 5 @showdialog
-![sbs5](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-coralreef-sbs05.webp)
+![sbs5](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action/main/tutorial-assets/es-coralreef-sbs05.webp)
 
 ## Build Step 6 @showdialog
-![sbs6](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-coralreef-sbs06.webp)
+![sbs6](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action/main/tutorial-assets/es-coralreef-sbs06.webp)
 
 ## Build Step 7 @showdialog
-![sbs7](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-coralreef-sbs07.webp)
+![sbs7](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action/main/tutorial-assets/es-coralreef-sbs07.webp)
 
 ## Build Step 8 @showdialog
-![sbs8](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-coralreef-sbs08.webp)
+![sbs8](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action/main/tutorial-assets/es-coralreef-sbs08.webp)
 
 ## Build Step 9 @showdialog
-![sbs9](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-coralreef-sbs09.webp)
+![sbs9](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action/main/tutorial-assets/es-coralreef-sbs09.webp)
 
 ## Build Step 10 @showdialog
-![sbs10](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-coralreef-sbs10.webp)
+![sbs10](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action/main/tutorial-assets/es-coralreef-sbs10.webp)
 
 ## Build Step 11 @showdialog
-![sbs11](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-coralreef-sbs11.webp)
+![sbs11](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action/main/tutorial-assets/es-coralreef-sbs11.webp)
 
 ## Build Step 12 @showdialog
-![sbs12](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-coralreef-sbs12.webp)
+![sbs12](https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action/main/tutorial-assets/es-coralreef-sbs12.webp)
 
 ## Activity 2: Code Your Project @showdialog
 We need to connect our model to the computer to make it come to life with code!
@@ -77,13 +77,13 @@ The code will be the instructions that tell our micro:bit what to do.
 ## Code Step 1 @showdialog
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
 
-<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 40%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 40%; margin:auto;">
 
 ## Code Step 2 @showdialog
 Click the three dots beside the ``|Download|`` button, then click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 
-<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
 
 ## Code Step 3
 Next, click the ``|Download|`` button to download the code to your project.
@@ -98,7 +98,7 @@ We are now ready to **use** our coral reef model to see how coral bleaching happ
 2. When you are ready for more details, click **'Tell me more!'**
 3. If you need help with the code, click the **lightbulb!**
 
-<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/tellmore_hintbox_gif.webp" style="display: block; width: 80%; margin:auto;">
+<img src="https://raw.githubusercontent.com/ssande-fwd/pxt-climate-action/main/tutorial-assets/tellmore_hintbox_gif.webp" style="display: block; width: 80%; margin:auto;">
 
 ## Use Step 1
 Take a close look at the model you just built. Can you name the different parts you used to make it? Be specific!
@@ -142,11 +142,11 @@ hint~
 ```block
 let temperature = 28
 
-sensors.dial1.fwdOnDialTurned(sensors.DialDirection.CW, function (difference) {
+buttons.dial1.fwdOnDialTurned(buttons.DialDirection.CW, function (difference) {
     temperature += 1
 })
 
-sensors.dial1.fwdOnDialTurned(sensors.DialDirection.CCW, function (difference) {
+buttons.dial1.fwdOnDialTurned(buttons.DialDirection.CCW, function (difference) {
     temperature += -1
 })
 
