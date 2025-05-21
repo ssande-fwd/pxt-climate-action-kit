@@ -180,9 +180,9 @@ hint~
 
 ```block
     if (temperature > 30) {
-        lights.ledRing.fwdSetAllPixelsColour(0xffffff)
+        lights.ledRing1.fwdSetAllPixelsColour(0xffffff)
     } else {
-        lights.ledRing.fwdSetAllPixelsColour(0xff0080)
+        lights.ledRing1.fwdSetAllPixelsColour(0xff0080)
     }
 ```
 
