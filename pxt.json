@@ -14,7 +14,8 @@
         "fwd-touch": "github:ssande-fwd/pxt-fwd-modules/fwd-touch#v2.0.2"
     },
     "files": [
-        "blank-project.md"
+        "blank-project.md",
+        "es-coralreef-use.md"
     ],
     "testFiles": [],
     "public": true,
